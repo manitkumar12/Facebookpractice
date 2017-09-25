@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3f88fb"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#3f88fb"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/forex_logo"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+
+                />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="19dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="30dp"
+                app:cardElevation="0dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:weightSum="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_view_sign_in"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="20dp"
+                        android:text="sign in"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="#3f88fb"
+                        />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/right_arrow"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/login_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="19dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardElevation="0dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/login_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="14sp"
+                    android:text="sign up"
+                    android:gravity="center"
+
+                    android:textAllCaps="true"
+                    android:layout_margin="1dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/back_ground"
+
+
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="30dp"
+                android:weightSum="3"
+
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:text="SIGN UP via "
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+
+                    />
+
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_face"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="12dp"
+                    android:onClick="click_card_image"
+                    android:layout_gravity="center_horizontal"
+
+                    >
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/face"
+                    android:textColor="#ffffff"
+                    android:onClick="click_image"
+                    android:textStyle="bold" />
+
+
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--&gt;-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="34dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--app:cardCornerRadius="17sp"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--app:cardBackgroundColor="#ffffff"-->
+
+                    <!--&gt;-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image_facebook"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@drawable/face"-->
+
+                        <!--android:layout_gravity="center"-->
+
+                        <!--/>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="34dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--app:cardCornerRadius="17dp"-->
+                    <!--app:cardBackgroundColor="#ffffff"-->
+                    <!--android:layout_marginStart="15dp"-->
+
+                    <!--&gt;-->
+
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@drawable/google_plus"-->
+                        <!--android:layout_gravity="center"-->
+
+                        <!--/>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
